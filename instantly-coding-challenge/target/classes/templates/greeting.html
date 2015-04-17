@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>instant.ly | code challenge</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<h3>Hello instantly!</h3>
+	
+	<form action="files" method="get">
+	
+		Enter a valid path (example: /Users/Shared/Library): <br />
+		<input name="path" type="text" size="50" /> <br /><br />
+		
+		Select what information you would like to display: <br />
+		<input type="checkbox" name="display" value="name" /> file name<br />
+		<input type="checkbox" name="display" value="size" /> file size<br />
+		<input type="checkbox" name="display" value="date_modified" /> date modified<br /><br />
+  
+  		Pick a traversal method:
+		<select name="traversalMethod">
+			<option value="DEPTH_FIRST">depth first</option>
+			<option value="BREADTH_FIRST">breadth first</option>
+		</select> <br /><br />
+		
+		<input type="submit" />
+		
+	</form>
+	
+</body>
+</html>
